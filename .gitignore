@@ -3,6 +3,68 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# ==========================================
+# Machine Learning & Data Science Specific
+# ==========================================
+
+# Pickle files (serialized data)
+*.pickle
+*.pkl
+*.p
+
+# PyTorch model files
+*.pth
+*.pt
+*.ckpt
+*.bin
+
+# TensorFlow model files
+*.h5
+*.pb
+saved_model/
+checkpoints/
+checkpoint/
+
+# Model storage directories
+# model_store/  # Commented out - contains tracked model files (model_asl.p, model_isl.p)
+models/
+weights/
+trained_models/
+
+# Dataset directories
+dataset/
+datasets/
+data/
+raw_data/
+processed_data/
+
+# Numpy arrays (except labels.npy which contains class labels)
+*.npy
+!labels.npy
+*.npz
+
+# Large media files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wav
+*.mp3
+
+# Jupyter Notebook outputs
+*.ipynb_checkpoints
+
+# ML experiment tracking
+mlruns/
+runs/
+wandb/
+.neptune/
+lightning_logs/
+
+# ==========================================
+# End of ML-specific patterns
+# ==========================================
+
 # C extensions
 *.so
 
